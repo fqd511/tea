@@ -14,3 +14,7 @@
 - [ ] Feat:可以选择多项；
 - [ ] Feat:如果选中水果的话，还要选择是哪些水果；
 - [ ] Refactor:SSR 便于生成 Thumbnail；
+
+## deploy
+
+- 自动部署需要在githook中配置执行deploy脚本

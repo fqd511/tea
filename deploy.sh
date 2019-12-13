@@ -12,7 +12,7 @@ set -e
 # 如果是发布到自定义域名
 # echo 'www.digvan.com' > CNAME
 
-cd dist
+cd public
 git init
 git add -A
 git commit -m 'deploy'

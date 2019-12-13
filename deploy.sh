@@ -11,6 +11,7 @@ set -e
 
 # 如果是发布到自定义域名
 # echo 'www.digvan.com' > CNAME
+echo 'start deploy.sh'
 
 cd public
 git init

@@ -17,4 +17,4 @@
 
 ## deploy
 
-- 自动部署需要在githook中配置执行deploy脚本
+- 自动部署需要在githook中配置执行deploy脚本，在脚本中添加`./deploy.sh`

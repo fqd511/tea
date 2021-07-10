@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下午茶吃什么？</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <link rel="icon" href="di_6.ico" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+
+<body>
+    <div id="app" class="area">
+        <article class="select-area">
+            <div class="item" v-for="(item,index) in items" :class="{active:index===activeIndex,fade:(index!==activeIndex)&&selectFinish,one:(index===activeIndex)&&selectFinish,added:index>=initialNum}" :key="index" @click="remove(index)" :title="index>=initialNum?'点击即可删除':''">
+                <span>{{item}}</span></div>
+        </article>
+        <input type="text" v-model="input" @keyup.enter="addInput" @focus="resetState" placeholder="来点新的...">
+        <button @click="clickBtn" class="submit">{{btnLabel}}</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
